@@ -1,0 +1,33 @@
+{
+  "name": "sumarsky.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "resume export cv.html -t Class",
+    "cv": "rimraf out/default && hackmyresume BUILD resume.json TO out/default/resume.all",
+    "cv-flat": "rimraf out/flat && hackmyresume BUILD resume.json TO out/flat/resume.all -t node_modules/jsonresume-theme-flat",
+    "cv-modern": "rimraf out/modern && hackmyresume BUILD resume.json TO out/modern/resume.all -t node_modules/jsonresume-theme-modern",
+    "cv-kendall": "rimraf out/kendall && hackmyresume BUILD resume.json TO out/kendall/resume.all -t node_modules/jsonresume-theme-kendall",
+    "cv-class": "rimraf out/class && hackmyresume BUILD resume.json TO out/class/resume.all -t node_modules/jsonresume-theme-class"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumarsky/sumarsky.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumarsky/sumarsky.github.io/issues"
+  },
+  "homepage": "https://github.com/sumarsky/sumarsky.github.io#readme",
+  "dependencies": {
+    "hackmyresume": "^1.8.0",
+    "jsonresume-theme-class": "0.1.2",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-kendall": "^0.1.18",
+    "jsonresume-theme-modern": "0.0.18",
+    "resume-cli": "^1.1.2",
+    "rimraf": "^2.6.2"
+  }
+}
