@@ -1,0 +1,22 @@
+{
+  "name": "sumarsky.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "resume export index.html -t Kendall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumarsky/sumarsky.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumarsky/sumarsky.github.io/issues"
+  },
+  "homepage": "https://github.com/sumarsky/sumarsky.github.io#readme",
+  "dependencies": {
+    "resume-cli": "0.4.13"
+  }
+}
