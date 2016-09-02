@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create": "resume export index.html -t Kendall"
+    "create": "resume export cv.html -t Kendall"
   },
   "repository": {
     "type": "git",
