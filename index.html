@@ -12,7 +12,8 @@
     <title>Igor Sumar Dimcevski</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Igor Dimcevski personal web page" />
-    <meta name="keywords" content="igor, igor dimcevski, igor dimchevski, dimcevski, dimchevski, igor sumar dimcevski, igor sumar dimchevski, sumar, sumarsky, игор, димчевски, игор димчевски, шумар, игор шумар димчевски" />
+    <meta name="keywords" content="igor, igor dimcevski, igor dimchevski, dimcevski, dimchevski, igor sumar dimcevski, igor sumar dimchevski, sumar, sumarsky, игор, димчевски, игор димчевски, шумар, игор шумар димчевски"
+    />
     <meta name="author" content="Igor Dimcevski" />
 
     <!-- 
@@ -450,7 +451,7 @@
                 </div>
                 <div class="col-md-6 to-animate">
                     <h3>Contact Form</h3>
-                    <form id="gForm" method="POST" action="https://script.google.com/macros/s/AKfycbz-OScoNvcPdzMOzW-09sQbIjx35JLdHPXM_ZKZ2N25Bar-xkHi/exec">
+                    <form id="gForm" method="POST" action="https://script.google.com/macros/s/AKfycbzW9SIWndJuX0P7el25aNn-MT-U1Co2kebwJ-a71BR5-qMQ5cA/exec">
                         <div class="form-group ">
                             <label for="name" class="sr-only">Name</label>
                             <input id="name" name="name" class="form-control" placeholder="Name" type="text">
@@ -517,7 +518,7 @@
     <script src="js/main.js"></script>
     <script>
         // Submit form - send mail
-        ;(function () {
+        ; (function () {
             $("#gForm").submit(function (event) {
                 event.preventDefault();
                 var url = event.target.action;
@@ -526,7 +527,7 @@
                     $("#formAlert").html("<div class='alert alert-success alert-dismissible' role='alert'> <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button> <strong>Success!</strong> Thank you for reaching out to me. </div> ");
                 });
             });
-        } ());        
+        }());
     </script>
 </body>
 
