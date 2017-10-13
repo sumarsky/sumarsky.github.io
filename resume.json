@@ -44,11 +44,11 @@
   },
   "work": [
     {
-      "company": "Vedel IT",
+      "company": "INSCALE",
       "position": "FullStack Developer",
-      "website": "http://www.vedelit.com",
-      "startDate": "2015-10-01",
-      "summary": "To be written...",
+      "website": "https://www.inscale.net/",
+      "startDate": "2016-10-01",
+      "summary": "Enterprice ERP solution",
       "highlights": [
         "..."
       ]
@@ -61,8 +61,8 @@
       "summary": "Part of an insurance company software. To be more specific the data collecting, report generating and dashboard parts of the system.",
       "highlights": [
         "MS Word extension for report generation.",
-        "Data collector web application that was used later for report generation.",
-        "Report generator web application.",
+        "Data collection web app.",
+        "Report generator web app.",
         "Dashboard creator and loader using DevExpress.",
         "Amazon AWS integration."
       ]
@@ -72,7 +72,7 @@
       "position": ".NET Developer",
       "website": "http://www.endava.com",
       "startDate": "2015-07-01",
-      "endDate": "2015-10-01",
+      "endDate": "2016-10-01",
       "summary": "Endava is a multinational corporation with world wide spread offices. It’s a large outsourcing organization that is based on several core values that all employees must have. My job there was to work on several projects (but one at a time), some commercial, some internal and one research project. Working with great people with lots of experience is what I found there and I have consumed much knowledge during my stay. Of that I am grateful.",
       "highlights": [
         "Middleware software for a large insurance company.",
