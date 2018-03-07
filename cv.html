@@ -1,86 +1,565 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<!doctype html>
+<html>
 <head>
-<title>themes.jsonresume.org | 504: Gateway time-out</title>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="robots" content="noindex, nofollow" />
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection" />
-<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" type="text/css" media="screen,projection" /><![endif]-->
-<style type="text/css">body{margin:0;padding:0}</style>
-<!--[if lte IE 9]><script type="text/javascript" src="/cdn-cgi/scripts/jquery.min.js"></script><![endif]-->
-<!--[if gte IE 10]><!--><script type="text/javascript" src="/cdn-cgi/scripts/zepto.min.js"></script><!--<![endif]-->
-<script type="text/javascript" src="/cdn-cgi/scripts/cf.common.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+<title>Igor Dimcevski - CV</title>
+<style>
+	/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* General, overall styling */
+body {
+	background: #F9F9F9;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 100px;
+}
+
+em {
+	color: #999;
+}
+
+p {
+	line-height: 1.4;
+}
+
+a {
+	color: #31A6D6;
+}
+
+a:visited {
+	color: #3061A5;
+}
+
+a:hover {
+	color: #3061A5;
+}
+
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+header {
+	background: #68B6E3;
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	color: #FFFFFF;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+header h2 {
+	color: #F3F3F3;
+	font-size: 1em;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* End header name styling */
+
+/* Set width of main body of CV */
+.container {
+	max-width: 700px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+/* End */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+#basics {
+	margin-bottom: 10px;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+#basics h3 {
+	margin-top: 1.5em;
+	margin-bottom: 10px;
+}
+#basics .contact strong {
+	line-height: 1.3;
+	float: left;
+	width: 80px;
+}
+
+.contact h3 {
+	padding-bottom: 10px;
+}
+
+.website,
+.email,
+.phone {
+	margin-bottom: 10px;
+	float: left;
+	width: 50%;
+}
+
+.summary {
+	padding-top: 5px;
+	clear: both;
+}
+
+#profiles {
+	overflow: hidden;
+}
+
+#profiles .item {
+	float: left;
+	width: 50%;
+}
+
+.username{
+	margin-top: 10px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.work_date,
+.work_position,
+.work_website,
+.institution,
+.study_date,
+.qualification {
+	margin-bottom: 10px;
+	float: left;
+	width: 30%;
+}
+
+.courses {
+	clear: both;
+}
+
+.dissertation {
+	margin-top: 10px;
+}
+
+#work,
+#volunteer {
+	padding-bottom: 5px;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+#work .item,
+#volunteer .item {
+	margin: 25px 0;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+#skills {
+	margin-bottom: 10px;
+	border-bottom: 1px #E2E2E2 solid;
+	padding-bottom: 5px;
+}
+
+#skills .item,
+#languages .item {
+	margin: 0 0 25px 0;
+}
+
+#interests .item {
+	margin-bottom: 25px;
+}
+
+#skills {
+	overflow: hidden;
+}
+
+#languages .item,
+#interests .item,
+#skills .item {
+	float: left;
+	width: 50%;
+}
+
+#references,
+#interests {
+	clear: both;
+}
+
+/* End styling */
+
+	</style>
 </head>
 <body>
-<div id="cf-wrapper">
-<div id="cf-error-details" class="cf-error-details-wrapper">
-<div class="cf-wrapper cf-error-overview">
-<h1>
-<span class="cf-error-type" data-translate="error">Error</span>
-<span class="cf-error-code">504</span>
-<small class="heading-ray-id">Ray ID: 3ea63ef0211d15dd &bull; 2018-02-09 10:47:37 UTC</small>
-</h1>
-<h2 class="cf-subheadline" data-translate="error_desc">Gateway time-out</h2>
+<header>
+<h1>Igor Dimcevski</h1>
+<h2>software engineer</h2>
+</header>
+<div id="content" class="container">
+<section id="basics">
+<div class="contact">
+<h3>Contact</h3>
+<div class="website">
+<strong>Website</strong>
+http://sumarsky.com/
 </div>
-<div class="cf-section cf-highlight cf-status-display">
-<div class="cf-wrapper">
-<div class="cf-columns cols-3">
-<div id="cf-browser-status" class="cf-column cf-status-item cf-browser-status ">
-<div class="cf-icon-error-container">
-<i class="cf-icon cf-icon-browser"></i>
-<i class="cf-icon-status cf-icon-ok"></i>
+<div class="email">
+<strong>Email</strong>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8d196dcd1d5dbddcecbd3d1f8dfd5d9d1d496dbd7d5">[email&#160;protected]</a>
 </div>
-<span class="cf-status-desc" data-translate="browser_desc">You</span>
-<h3 class="cf-status-name" data-translate="browser_label">Browser</h3>
-<span class="cf-status-label" data-translate="browser_status_label">Working</span>
-</div>
-<div id="cf-cloudflare-status" class="cf-column cf-status-item cf-cloudflare-status ">
-<div class="cf-icon-error-container">
-<i class="cf-icon cf-icon-cloud"></i>
-<i class="cf-icon-status cf-icon-ok"></i>
-</div>
-<span class="cf-status-desc" data-translate="cloud_desc">Frankfurt</span>
-<h3 class="cf-status-name" data-translate="cloud_label">Cloudflare</h3>
-<span class="cf-status-label" data-translate="cloud_status_label">Working</span>
-</div>
-<div id="cf-host-status" class="cf-column cf-status-item cf-host-status cf-error-source">
-<div class="cf-icon-error-container">
-<i class="cf-icon cf-icon-server"></i>
-<i class="cf-icon-status cf-icon-error"></i>
-</div>
-<span class="cf-status-desc" data-translate="server_desc">themes.jsonresume.org</span>
-<h3 class="cf-status-name" data-translate="server_label">Host</h3>
-<span class="cf-status-label" data-translate="server_status_label">Error</span>
+<div class="phone">
+<strong>Phone</strong>
+(389) 71 371-181
 </div>
 </div>
+<div class="summary">
+<h3>About</h3>
+<p>Codes everything (backend, frontend, video games once per year, up for new challenges). Reads everything (technical, belles-letters, blog posts, twitter). Plays everything (board games, video games, card games)</p>
+</div>
+<section id="profiles">
+<div class="item">
+<strong class="network">
+GitHub
+</strong>
+<div class="url">
+<a href="https://github.com/sumarsky">
+sumarsky
+</a>
 </div>
 </div>
-<div class="cf-section cf-wrapper">
-<div class="cf-columns two">
-<div class="cf-column">
-<h2 data-translate="what_happened">What happened?</h2>
-<p>The web server reported a gateway time-out error.</p>
-</div>
-<div class="cf-column">
-<h2 data-translate="what_can_i_do">What can I do?</h2>
-<p data-translate="try_again_in_a_few">Please try again in a few minutes.</p>
-</div>
+<div class="item">
+<strong class="network">
+stack-overflow
+</strong>
+<div class="url">
+<a href="http://stackoverflow.com/users/2900305/igor-dimchevski">
+igor-dimchevski
+</a>
 </div>
 </div>
-<div class="cf-error-footer cf-wrapper">
-<p>
-<span class="cf-footer-item">Cloudflare Ray ID: <strong>3ea63ef0211d15dd</strong></span>
-<span class="cf-footer-separator">&bull;</span>
-<span class="cf-footer-item"><span data-translate="your_ip">Your IP</span>: 46.217.128.53</span>
-<span class="cf-footer-separator">&bull;</span>
-<span class="cf-footer-item"><span data-translate="performance_security_by">Performance &amp; security by</span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">Cloudflare</a></span>
-</p>
+<div class="item">
+<strong class="network">
+LinkedIn
+</strong>
+<div class="url">
+<a href="https://linkedin.com/in/igordimcevski">
+igordimcevski
+</a>
 </div>
 </div>
+<div class="item">
+<strong class="network">
+Facebook
+</strong>
+<div class="url">
+<a href="https://www.facebook.com/i.dimcevski">
+i.dimcevski
+</a>
 </div>
+</div>
+<div class="item">
+<strong class="network">
+Twitter
+</strong>
+<div class="url">
+<a href="https://twitter.com/sumarsky">
+sumarsky
+</a>
+</div>
+</div>
+</section>
+</section>
+<section id="work">
+<h2>Work</h2>
+<div class="item">
+<h3 class="work_name">
+INSCALE
+</h3>
+<div class="work_position">
+FullStack Developer
+</div>
+<div class="work_date">
+<span class="startDate">
+2016-10-01
+</span>
+<span class="endDate">
+- Present
+</span>
+</div>
+<div class="work_website">
+<a href="https://www.inscale.net/">https://www.inscale.net/</a>
+</div>
+<div class="summary">
+<p>Enterprise ERP solution</p>
+</div>
+<ul class="highlights">
+<li>Maintain and improve</li>
+<li>Introduce new features</li>
+<li>Multiple Web API endpoints with .NET</li>
+<li>Web app with AngularJS</li>
+<li>Unit tests with MSTest</li>
+<li>TFS as source control</li>
+<li>Build pipeline on TFS</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="work_name">
+Freelance Programmer
+</h3>
+<div class="work_position">
+FullStack Developer
+</div>
+<div class="work_date">
+<span class="startDate">
+2015-03-18
+</span>
+<span class="endDate">
+- Present
+</span>
+</div>
+<div class="work_website">
+<a href="https://www.upwork.com/">https://www.upwork.com/</a>
+</div>
+<div class="summary">
+<p>Part of an insurance company software. To be more specific the data collecting, report generating and dashboard parts of the system.</p>
+</div>
+<ul class="highlights">
+<li>Amazon AWS</li>
+<li>Web API with .NET</li>
+<li>Web app with Angular</li>
+<li>Report generator</li>
+<li>GIT as source control</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="work_name">
+Endava
+</h3>
+<div class="work_position">
+.NET Developer
+</div>
+<div class="work_date">
+<span class="startDate">
+2015-07-01
+</span>
+<span class="endDate">
+- 2016-10-01
+</span>
+</div>
+<div class="work_website">
+<a href="http://www.endava.com">http://www.endava.com</a>
+</div>
+<div class="summary">
+<p>Endava is a multinational corporation with world wide spread offices. It’s a large outsourcing organization that is based on several core values that all employees must have. My job there was to work on several projects (but one at a time), some commercial, some internal and one research project. Working with great people with lots of experience is what I found there and I have consumed much knowledge during my stay. Of that I am grateful.</p>
+</div>
+<ul class="highlights">
+<li>Middleware software for a large insurance company built in .NET</li>
+<li>Application for launching games and keeping track of statistics for a nonprofit organization. Everything built with JavaScript (nodeJS + Angular)</li>
+<li>Web based game for a nonprofit organization. Built with JavaScript</li>
+<li>HoloLens Kanban whiteboard - proof of concept application. Built with Unity</li>
+</ul>
+</div>
+<div class="item">
+<h3 class="work_name">
+Aspekt
+</h3>
+<div class="work_position">
+.NET Developer
+</div>
+<div class="work_date">
+<span class="startDate">
+2012-06-01
+</span>
+<span class="endDate">
+- 2015-07-01
+</span>
+</div>
+<div class="work_website">
+<a href="http://aspekt.mk">http://aspekt.mk</a>
+</div>
+<div class="summary">
+<p>We always remember our first time. So I remember “Aspekt” as my first professional programming experience. Large microcredit/leasing COTS is what I found there in the beginning. Started with development on new features and fixing stuff as a junior, to upgrading the whole system to a newer platform as a semi – senior. Of course I was not alone there, we were a whole team of developers, supported by business analysts and project managers, backed by some large microcredit / leasing clients.</p>
+</div>
+<ul class="highlights">
+<li>Started with development on new features and fixing stuff as a junior, to upgrading the whole system to a newer platform as a semi – senior.</li>
+<li>One of the core developers on the project.</li>
+<li>Supported the project until everything was delivered and operating as expected.</li>
+<li>System built on .NET</li>
+</ul>
+</div>
+</section>
+<section id="education">
+<h2>Education</h2>
+<div class="item">
+<div class="institution">
+University Sts. Cyril and Methodius - Skopje, Macedonia
+</div>
+<div class="study_date">
+<span class="startDate">
+2008-10-01
+</span>
+<span class="endDate">
+- 2012-12-03
+</span>
+</div>
+<ul class="courses">
+<li>28 engineering courses</li>
+<li>8 mathematical courses</li>
+</ul>
+</div>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="item">
+<div class="name">
+Microsoft Technologies
+</div>
+<div class="level">
+<em>Expert</em>
+</div>
+<ul class="keywords">
+<li>.NET</li>
+<li>ASP.NET MVC</li>
+<li>WebApi 2</li>
+<li>SQL Server</li>
+<li>EntityFramework</li>
+<li>IIS (Internet Information Server)</li>
+<li>WCF (Windows Communication Foundation)</li>
+<li>TFS (Team Foundation Server)</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+JavaScript Technologies
+</div>
+<div class="level">
+<em>Expert</em>
+</div>
+<ul class="keywords">
+<li>NodeJS</li>
+<li>AngularJS / Angular</li>
+<li>Jasmine / Mocha</li>
+<li>Karma</li>
+<li>Protractor</li>
+<li>TypeScript</li>
+<li>Grunt / Gulp / Webpack</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+Version Control
+</div>
+<div class="level">
+<em>Expert</em>
+</div>
+<ul class="keywords">
+<li>git</li>
+<li>TFS</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+Cloud
+</div>
+<div class="level">
+<em>Experienced</em>
+</div>
+<ul class="keywords">
+ <li>AWS</li>
+<li>Azure</li>
+</ul>
+</div>
+</section>
+<section id="languages">
+<h2>Languages</h2>
+<div class="item">
+<div class="language">
+Macedonian
+</div>
+<div class="level">
+<em>Native speaker</em>
+</div>
+</div>
+<div class="item">
+<div class="language">
+English
+</div>
+<div class="level">
+<em>Master</em>
+</div>
+</div>
+</section>
+<section id="interests">
+<h2>Interests</h2>
+<div class="item">
+<div class="name">
+Board Games
+</div>
+<ul class="keywords">
+<li>7 Wonders</li>
+<li>Alchemists</li>
+<li>Risk 2210 AD</li>
+<li>Terra Mystica</li>
+<li>Trajan</li>
+<li>Tzolkin: The Mayan Calendar</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+Video Games
+</div>
+<ul class="keywords">
+<li>Diablo Universe</li>
+<li>WarCraft Universe</li>
+<li>League of Legends</li>
+<li>Witcher 3</li>
+<li>Dark Souls</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+Food
+</div>
+<ul class="keywords">
+<li>Coffee</li>
+<li>Burgers</li>
+<li>Coke</li>
+<li>Cake</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+Reading
+</div>
+<ul class="keywords">
+<li>Technical</li>
+<li>Belles-lettres</li>
+</ul>
+</div>
+</section>
+<section id="references">
+<h2>References</h2>
+<div class="item">
+<blockquote class="reference">
+Dimcevski is a highly motivated developer who never steps back at any tasks, regardless of their difficulty. The modern day geek which is highly sought for in any shop/company carries with him his knowledge, experience and fearlessness, along with a high sense of awareness to new ways of solving old problems. Therefore, if knowledge, experience, fearlessness and a new way of thinking and problem solving is what you are seeking for, Dimcevski is your go-to developer.
+</blockquote>
+<div class="name">
+— Marko Manchev
+</div>
+</div>
+</section>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script></body>
+</html>
