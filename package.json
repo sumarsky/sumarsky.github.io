@@ -23,11 +23,11 @@
   "homepage": "https://github.com/sumarsky/sumarsky.github.io#readme",
   "dependencies": {
     "hackmyresume": "^1.8.0",
+    "jsonresume-theme-class": "0.1.2",
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-kendall": "^0.1.18",
     "jsonresume-theme-modern": "0.0.18",
-    "jsonresume-theme-class": "0.1.2",
-    "resume-cli": "0.4.13",
+    "resume-cli": "^1.1.2",
     "rimraf": "^2.6.2"
   }
 }
